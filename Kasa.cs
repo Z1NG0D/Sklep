@@ -11,7 +11,7 @@ public class Kasa
 
     public void CreateProduct()
     {
-        var path = $"{Directory.GetCurrentDirectory()}\\products.json";
+        var path = $"{Directory.GetCurrentDirectory()}//products.json";
         var json = File.ReadAllText(path);
         AllProducts = JsonConvert.DeserializeObject<List<Product>>(json);
 
