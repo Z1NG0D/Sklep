@@ -28,6 +28,10 @@ while (true)
         Console.Clear();
         menu.Zakup();
     }
+    if (!menu.IsCorrect(menu.answer!) && menu.answer == "3")
+    {
+        break;
+    }
     if (menu.answer == "P")
     {
         Console.Clear();
